@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::after , *::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+   /* background-color: #26223b;*/
+   background-color: #1f1e29;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    max-width: 100%;
+    height: 60px;
+    font-family: "Montserrat", serif;
+    color: white;
+}
+
+.navbar a{
+
+   box-shadow: 0 0 0 0.2px white;
+    border-radius: 5px;
+    padding: 9px 17px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+
+.container {
+    width: 55rem;
+    margin: auto;
+}
+.gitIcon{
+    padding-left: 10px;
+    font-weight: 100;
+}
