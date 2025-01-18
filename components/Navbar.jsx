@@ -3,14 +3,18 @@ import { faGithub, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { faSun } from '@fortawesome/free-regular-svg-icons';
 
 
-const Navbar = () => {
+const Navbar = ({ toggleTheme }) => {
 return (
     <nav className="navbar">
+        <div className='navbarSection'>
         <h1>Hi, i'm Sonya</h1>
-        <p>Front-end developer</p>
+        <p>&gt; Front-end developer</p>
+        </div>
         <a href='/'>my telegram<FontAwesomeIcon icon={faTelegram} className='gitIcon'/></a>
         <a href ='/'>my git<FontAwesomeIcon icon={faGithub} className='gitIcon'/></a>
-        <a href ='/'>light mode <FontAwesomeIcon icon={faSun} className='gitIcon'/></a>
+        <button className = 'light-mode-toggle' onClick={toggleTheme}>
+            light mode <FontAwesomeIcon icon={faSun} className='gitIcon'/>
+        </button>
     </nav>
 )
 }
